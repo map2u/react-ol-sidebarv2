@@ -1,5 +1,5 @@
 import React            from 'react'
-import { MapComponent } from 'react-openlayers'
+import { Map } from 'react-openlayers'
 import { PropTypes }    from 'prop-types'
 
 class Tab extends React.Component {
@@ -46,7 +46,7 @@ const TabType = PropTypes.shape({
   type: PropTypes.oneOf([Tab])
 });
 
-class Sidebar extends MapComponent<olElement, Props> {
+class Sidebar extends Map<olElement, Props> {
   static propTypes = {
     id: PropTypes.string.isRequired,
     originalTitle: PropTypes.string,
